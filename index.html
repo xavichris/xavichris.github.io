@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Enable subtitles in &ltvideo&gt tag</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="topText">
+            <p>This code was prepared in response to a Q&A Discussion topic linked <a href="https://www.sololearn.com/Discuss/3080036/?ref=app">here</a>, question posted by <br><img id="avat1" style="width:19px;height:19px;border-radius:19px;position:relative;bottom:-4px;" src="https://api.sololearn.com/uploads/avatars/18812978.jpg"> <a href="https://www.sololearn.com/Profile/18812978/?ref=app">Xavier Christian</a>, Lv.14 user from <img src="https://flagcdn.com/h20/ng.png" height="11px"> NG.</p>
+            <p>Please check comments/replies section of this code for more info.</p>
+        </div>
+        
+        <div id="vidDiv">
+            <video id="videoPlayer" poster="speech%20thumbnail.png" controls>
+                <source src="Speech%20of%20Success.mp4" type="video/mp4">Your browser does not support the video tag.
+                <track label="English" kind="subtitles" srclang="en" src="English%20subtitles%20for%20speech%20%5BEN%5D.vtt" default>
+                <track label="日本語" kind="subtitles" srclang="ja" src="Japanese%20subtitles%20for%20speech%20%5BJA%5D.vtt">
+                <track label="Deutsch" kind="subtitles" srclang="de" src="German%20subtitles%20for%20speech%20%5BDE%5D.vtt">
+                <track label="Español" kind="subtitles" srclang="es" src="Spanish%20subtitles%20for%20speach%20%5BES%5D.vtt">
+                <track label="Česko" kind="subtitles" srclang="cz" src="Czechia%20subtitles%20for%20speech%20%5BCZ%5D.vtt">
+                <track label="Français" kind="subtitles" srclang="fr" src="French%20subtitles%20for%20speech%20%5BFR%5D.vtt">
+                <track label="Italiano" kind="subtitles" srclang="it" src="Italian%20subtitles%20for%20speech%20%5BIT%5D.vtt">
+                <track label="Русский" kind="subtitles" srclang="ru" src="Russian%20subtitles%20for%20speech%20%5BRU%5D.vtt">
+                <track label="हिंदी" kind="subtitles" srclang="hi" src="Hindi%20subtitles%20for%20speech%20%5BHI%5D.vtt">
+            </video>
+        </div>
+        
+        <div id="aboutThisCode">
+            <p><u>What does this code do?</u></p>
+            <p>It demonstrates the usage of subtitles in &ltvideo&gt tag. All files used are hosted in Dropbox, from .mp4 file, to .png thumbnail, and .vtt subtitle tracks. There is NO crossorigin attribute used.</p>
+            <p>To change subtitles, click on the   ⋮   part of the video player for options, select <mark>CC</mark> Captions to change language of subtitles.</p>
+            The default language is English [EN]. You can change the language of subtitles to:<br>
+            <ul type="dot" align="left" style="margin-left:auto; margin-right:auto; display:inline-block;">
+                <li>Japanese [JA] - 日本語</li>
+                <li>German [DE] - Deutsch</li>
+                <li>Spanish [ES] - Español</li>
+                <li>Czechia [CZ] - Česko</li>
+                <li>French [FR] - Français</li>
+                <li>Italian [IT] - Italiano</li>
+                <li>Russian [RU] - Русский</li>
+                <li>Hindi [HI] - हिंदी</li>
+            </ul>
+        </div>
+        <div id="footer" onclick="">
+            <p onclick="window.open('https://www.sololearn.com/Profile/80387/?ref=app', '_blank');" style="font-size:xx-small; position: relative; bottom:3px;color:#BBBBBB;" >Made by:  <img src="https://api.sololearn.com/uploads/avatars/80387.jpg" style="width:15px;height:15px;border-radius:15px;position:relative;bottom:-4px;"> Solomoni Railoa (Lv.16 Sololearner - @Fiji) ID:80387</p>
+        </div>
+	<script src="script.js"></script>
+    </body>
+</html>
